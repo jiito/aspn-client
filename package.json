@@ -1,0 +1,9 @@
+{
+  "name": "aspn-client",
+  "version": "1.0.0",
+  "description": "The Javascript Client to interact with microservices hosted on the ASPN network.",
+  "main": "index.ts",
+  "repository": "git@github.com:jiito/aspn-client.git",
+  "author": "jiito <benjamin.allanrahill@gmail.com>",
+  "license": "MIT"
+}
