@@ -5,5 +5,15 @@
   "main": "index.ts",
   "repository": "git@github.com:jiito/aspn-client.git",
   "author": "jiito <benjamin.allanrahill@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0"
+  }
 }
