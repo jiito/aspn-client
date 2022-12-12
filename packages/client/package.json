@@ -1,11 +1,16 @@
 {
-  "name": "@aspn/core",
-  "version": "0.1.0",
+  "name": "@aspn/client",
+  "version": "1.0.0",
   "description": "The Javascript Client to interact with microservices hosted on the ASPN network.",
   "main": "lib/cjs/index.js",
   "repository": "git@github.com:jiito/aspn-client.git",
   "author": "jiito <benjamin.allanrahill@gmail.com>",
   "license": "MIT",
+  "files": [
+    "lib",
+    "src",
+    "LICENSE"
+  ],
   "type": "module",
   "sideEffects": false,
   "module": "lib/esm/index.js",
@@ -14,15 +19,12 @@
     "import": "./lib/esm/index.js",
     "require": "./lib/cjs/index.js"
   },
-  "private": "true",
-  "workspaces": ["packages/*/*", "packages/*"],
-  "files": ["lib", "src", "LICENSE"],
   "scripts": {
-    "clean": "npx lerna run clean",
-    "build": "yarn clean && lerna run build --ignore=@aspn/nextjs-client-example"
+    "clean": "shx rm -rf lib/*",
+    "build": "yarn clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "postbuild": "echo '{\"type\":\"commonjs\"}' | npx json > lib/cjs/package.json && echo '{\"type\":\"module\"}' | npx json > lib/esm/package.json"
   },
   "dependencies": {
-    "lerna": "^6.1.0",
     "shx": "^0.3.4",
     "typescript": "^4.9.3"
   },

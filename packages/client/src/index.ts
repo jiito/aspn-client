@@ -2,9 +2,10 @@ import { CONFIG } from './config';
 
 interface Project {
   id: Number;
+  function_id: Number;
 }
 export class AspnClient {
-  project: Project = { id: 1 };
+  project: Project = { id: 1, function_id: 3 };
 
   constructor(project: Project) {
     this.project = project;

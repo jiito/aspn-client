@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@aspn/client@file:../..":
+  version "1.0.0"
+  dependencies:
+    typescript "^4.9.3"
+
+"@aspn/client@file:../../":
+  version "1.0.0"
+  dependencies:
+    typescript "^4.9.3"
+
 "@babel/runtime-corejs3@^7.10.2":
   version "7.20.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.20.6.tgz#63dae945963539ab0ad578efbf3eff271e7067ae"
@@ -1819,7 +1829,7 @@ type-fest@^0.20.2:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
 
-typescript@4.9.4:
+typescript@4.9.4, typescript@^4.9.3:
   version "4.9.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
   integrity sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==
